@@ -398,4 +398,113 @@ return {
             },
         }
     end,
+
+    ---@param palette PaletteColors
+    ---@return ThemeColors
+    draco = function(palette)
+        return {
+            ui = {
+                fg         = "#F8F8F2",
+                fg_dim     = "#708CA9",
+                fg_reverse = "#263340",
+
+                bg_dim     = "#0A0D10",
+                bg_gutter  = "#131A20",
+
+                bg_m3      = "#0A0D10",
+                bg_m2      = "#0B0D0F",
+                bg_m1      = "#131A20",
+                bg         = "#0B0D0F",
+                bg_p1      = "#263340",
+                bg_p2      = "#414D58",
+
+                special    = "#9580FF", -- purple
+                nontext    = "#414D58",
+                whitespace = "#414D58",
+
+                bg_visual  = "#263340",
+                bg_search  = "#414D58",
+
+                pmenu = {
+                    fg       = "#F8F8F2",
+                    fg_sel   = "none",
+                    bg       = "#263340",
+                    bg_sel   = "#414D58",
+                    bg_sbar  = "#263340",
+                    bg_thumb = "#414D58",
+                },
+                float = {
+                    fg        = "#F8F8F2",
+                    bg        = "#0A0D10",
+                    fg_border = "#708CA9",
+                    bg_border = "#0A0D10",
+                },
+            },
+
+            syn = {
+                string     = "#8AFF80",  -- green
+                variable   = "#F8F8F2",
+                number     = "#9580FF",  -- purple
+                constant   = "#F8F8F2",  -- white
+                identifier = "#FFFF80",  -- yellow
+                parameter  = "#FF80BF",  -- pinkish param
+                -- fun        = "#FFCA80",  -- orange (function props)
+                fun        = "#8AFF80",  -- orange (function props)
+                statement  = "#FF80BF",  -- pink
+                keyword    = "#FF80BF",  -- pink
+                operator   = "#F8F8F2",  -- orange
+                preproc    = "#FF80BF",  -- red
+                type       = "#80FFEA",  -- cyan
+                regex      = "#FFCA80",  -- orange
+                deprecated = "#414D58",
+                comment    = "#708CA9",
+                punct      = "#F8F8F2",
+                special1   = "#F8F8F2",
+                special2   = "#FF9580",
+                special3   = "#FF80BF",
+            },
+
+            vcs = {
+                added   = "#8AFF80",
+                removed = "#FF9580",
+                changed = "#FFCA80",
+            },
+
+            diff = {
+                add    = "#8AFF80",
+                delete = "#FF9580",
+                change = "#9580FF",
+                text   = "#FFCA80",
+            },
+
+            diag = {
+                ok      = "#8AFF80",
+                error   = "#FF9580",
+                warning = "#FFFF80",
+                info    = "#80FFEA",
+                hint    = "#9580FF",
+            },
+
+            term = {
+                "#0B0D0F", -- black
+                "#FF9580", -- red
+                "#8AFF80", -- green
+                "#FFFF80", -- yellow
+                "#9580FF", -- blue
+                "#FF80BF", -- magenta
+                "#80FFEA", -- cyan
+                "#F8F8F2", -- white
+                "#414D58", -- bright black
+                "#FFBFB3", -- bright red
+                "#B9FFB3", -- bright green
+                "#FFFFB3", -- bright yellow
+                "#BFB3FF", -- bright blue
+                "#FFB3D9", -- bright magenta
+                "#B3FFF2", -- bright cyan
+                "#FFFFFF", -- bright white
+                "#FFCA80", -- extended color 1
+                "#FF9580", -- extended color 2
+            },
+        }
+    end,
 }
